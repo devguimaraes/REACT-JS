@@ -7,6 +7,13 @@
 	display: block;
 	margin-bottom: 8px;
 	font-size: 24px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #212121;
 }
 
 .campo-texto input {
@@ -17,4 +24,11 @@
 	font-size: 24px;
 	padding: 24px;
 	box-sizing: border-box;
+
+	border-radius: 20px;
+}
+
+.campo-texto input::placeholder {
+	font-size: 1rem;
+	color: #a4a4a4;
 }
