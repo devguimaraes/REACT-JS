@@ -10,11 +10,11 @@
 .formulario form {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: beige;
+	justify-content: flex-start;
+
+	background-color: #fff;
 	width: 70%;
-	padding: 1rem;
+	padding: 4rem;
 	border-radius: 20px;
 }
 

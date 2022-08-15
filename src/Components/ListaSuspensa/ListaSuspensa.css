@@ -1,0 +1,32 @@
+.container-listaSuspensa {
+	width: 80%;
+	margin: 24px 0;
+}
+
+.listaSuspensa-titulo {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 24px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #212121;
+}
+
+.container-listaSuspensa select {
+	background-color: #fff;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+	width: 100%;
+	border: none;
+	font-size: 24px;
+	padding: 24px;
+	box-sizing: border-box;
+
+	border-radius: 20px;
+
+	font-size: 1rem;
+	color: 212121;
+}

@@ -1,0 +1,26 @@
+import './ListaSuspensa.css';
+
+function ListaSuspensa(props) {
+	const { itens } = props;
+	const { label } = props;
+	const { requiredObrigatorio } = props;
+
+	return (
+		<div className="container-listaSuspensa">
+			<label className="listaSuspensa-titulo" htmlFor={label}>
+				{label}
+			</label>
+			<select
+				required={requiredObrigatorio}
+				name={itens[itens]}
+				id={itens[itens]}
+			>
+				{itens.map((item) => (
+					<option key={item}>{item}</option>
+				))}
+			</select>
+		</div>
+	);
+}
+
+export default ListaSuspensa;
