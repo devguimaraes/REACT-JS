@@ -1,9 +1,15 @@
 import './ListaSuspensa.css';
 
 function ListaSuspensa(props) {
+	const { requiredObrigatorio } = props;
 	const { itens } = props;
 	const { label } = props;
-	const { requiredObrigatorio } = props;
+	const { select } = props;
+	const { pegaValor } = props;
+
+	function aoDigitar(evento) {
+		pegaValor(evento.target.value);
+	}
 
 	return (
 		<div className="container-listaSuspensa">
@@ -11,7 +17,9 @@ function ListaSuspensa(props) {
 				{label}
 			</label>
 			<select
+				value={select}
 				required={requiredObrigatorio}
+				onChange={(e) => aoDigitar(e)}
 				name={itens[itens]}
 				id={itens[itens]}
 			>

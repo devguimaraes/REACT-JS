@@ -1,15 +1,30 @@
+import { useState } from 'react';
 import times from '../../data/times';
 import Botao from '../button';
 import CampoTexto from '../InputText';
 import ListaSuspensa from '../ListaSuspensa/Index';
 import './form.css';
 
-function aoSalvar(evento) {
-	evento.preventDefault();
-	console.log('Form foi submetido');
-}
+function Formulario(props) {
+	const { colaboradorCadastrado } = props;
 
-function Formulario() {
+	const [nome, setNome] = useState('');
+	const [cargo, setcargo] = useState('');
+	const [imagem, setImagem] = useState('');
+
+	const [select, setSelect] = useState('');
+
+	function aoSalvar(evento) {
+		evento.preventDefault();
+
+		colaboradorCadastrado({
+			nome,
+			cargo,
+			imagem,
+			select,
+		});
+	}
+
 	return (
 		<section className="formulario">
 			<form
@@ -23,14 +38,29 @@ function Formulario() {
 					requiredObrigatorio
 					label="Nome"
 					placeholder="Digite seu nome"
+					value={nome}
+					inputAlterado={(e) => setNome(e)}
 				/>
 				<CampoTexto
 					requiredObrigatorio
 					label="Cargo"
 					placeholder="Digite seu Cargo"
+					value={cargo}
+					inputAlterado={(e) => setcargo(e)}
 				/>
-				<CampoTexto label="Imagem" placeholder="Informe o endereço da imagem" />
-				<ListaSuspensa requiredObrigatorio itens={times} label="Times" />
+				<CampoTexto
+					label="Imagem"
+					placeholder="Informe o endereço da imagem"
+					value={imagem}
+					inputAlterado={(e) => setImagem(e)}
+				/>
+				<ListaSuspensa
+					requiredObrigatorio
+					value={select}
+					pegaValor={(evento) => setSelect(evento)}
+					itens={times}
+					label="Times"
+				/>
 				<Botao>Criar Card</Botao>
 			</form>
 		</section>
