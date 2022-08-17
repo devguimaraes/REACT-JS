@@ -8,6 +8,7 @@ function Time(props) {
 	return (
 		<section
 			className="time-container"
+			key={nomeTime}
 			style={{ backgroundColor: corSecundaria }}
 		>
 			<h3 style={{ borderBottomColor: corPrimaria }}>{nomeTime}</h3>
