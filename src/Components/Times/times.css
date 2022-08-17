@@ -1,7 +1,6 @@
 .time-container {
 	text-align: center;
 	padding: 32px;
-	background-color: #d9f7e9;
 }
 
 .time-container h3 {
@@ -9,5 +8,5 @@
 
 	font-size: 24px;
 	padding-bottom: 10px;
-	border-bottom: 3px solid #57c278;
+	border-bottom: 3px solid;
 }

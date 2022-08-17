@@ -2,9 +2,15 @@ import './times.css';
 
 function Time(props) {
 	const { nomeTime } = props;
+	const { corPrimaria } = props;
+	const { corSecundaria } = props;
+
 	return (
-		<section className="time-container">
-			<h3>{nomeTime}</h3>
+		<section
+			className="time-container"
+			style={{ backgroundColor: corSecundaria }}
+		>
+			<h3 style={{ borderBottomColor: corPrimaria }}>{nomeTime}</h3>
 		</section>
 	);
 }

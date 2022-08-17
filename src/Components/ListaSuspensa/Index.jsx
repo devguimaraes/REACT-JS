@@ -20,11 +20,11 @@ function ListaSuspensa(props) {
 				value={select}
 				required={requiredObrigatorio}
 				onChange={(e) => aoDigitar(e)}
-				name={itens[itens]}
-				id={itens[itens]}
+				name={itens.map((e) => e.nome)[itens.map((e, i) => i)]}
+				id={itens.map((e) => e.nome)[itens.map((e, indice) => indice)]}
 			>
 				{itens.map((item) => (
-					<option key={item}>{item}</option>
+					<option key={item.nome}>{item.nome}</option>
 				))}
 			</select>
 		</div>
