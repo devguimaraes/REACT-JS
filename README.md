@@ -33,9 +33,7 @@ The web page was developed with React JS
 
 ### Initializing all the packages
 
-Amplication is using a mono-repo with multiple packages. To initialize all the packages on a local development environment, including running a docker image for the DB and seeding the DB.
-
-1. Execute the following commands in the project root folder:
+The app is using a monorepo with multiple packages. To initialize all packages in a development environment. Run the following commands in the project root folder:
 
 ```jsx
 cd /REACTVITEALURA
