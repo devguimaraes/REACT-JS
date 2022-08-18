@@ -6,19 +6,19 @@ function CampoTexto(props) {
 	const { placeholder } = props;
 	const { requiredObrigatorio } = props;
 
-	const { nome } = props;
+	const { value } = props;
 	const { inputAlterado } = props;
 
 	const aoDigitado = (e) => {
-		inputAlterado(e.target.value);
+		inputAlterado(e);
 	};
 
 	return (
 		<div className="campo-texto">
 			<label htmlFor={label}>{label}</label>
 			<input
-				value={nome}
-				onChange={(e) => aoDigitado(e)}
+				value={value}
+				onChange={(e) => aoDigitado(e.target.value)}
 				required={requiredObrigatorio}
 				placeholder={placeholder}
 			/>

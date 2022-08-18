@@ -8,7 +8,7 @@ function ListaSuspensa(props) {
 	const { pegaValor } = props;
 
 	function aoDigitar(evento) {
-		pegaValor(evento.target.value);
+		pegaValor(evento);
 	}
 
 	return (

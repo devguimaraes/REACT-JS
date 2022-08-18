@@ -23,6 +23,10 @@ function Formulario(props) {
 			imagem,
 			select,
 		});
+
+		setNome('');
+		setcargo('');
+		setImagem('');
 	}
 
 	return (
@@ -57,7 +61,7 @@ function Formulario(props) {
 				<ListaSuspensa
 					requiredObrigatorio
 					value={select}
-					pegaValor={(evento) => setSelect(evento)}
+					pegaValor={(evento) => setSelect(evento.target.value)}
 					itens={times}
 					label="Times"
 				/>

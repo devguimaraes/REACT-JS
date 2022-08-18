@@ -10,7 +10,8 @@ function App() {
 	const [colaboradores, setColaborador] = useState([]);
 
 	function aoNovoColaborador(colaborador) {
-		setColaborador(...colaboradores, colaborador);
+		setColaborador([...colaboradores, colaborador]);
+		// TODO os dados do formulário são salvos aqui
 	}
 
 	return (
@@ -21,9 +22,13 @@ function App() {
 			/>
 			{times.map((evento) => (
 				<Time
+					key={evento.nome}
 					nomeTime={evento.nome}
 					corPrimaria={evento.primary}
 					corSecundaria={evento.secundary}
+					colaboradores={colaboradores.filter(
+						(para) => para.select === evento.nome
+					)}
 				/>
 			))}
 		</>

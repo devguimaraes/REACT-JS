@@ -1,0 +1,43 @@
+.colaborador-container {
+	width: 280px;
+}
+
+.colaborador-card-cima {
+	background-color: orange;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.colaborador-card-baixo {
+	background-color: rgb(236, 232, 232);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+	border-radius: 0px 0px 10px 10px;
+	padding-top: 45px;
+	padding-bottom: 20px;
+}
+
+.colaborador-imgPerfil {
+	width: 120px;
+	border-radius: 50%;
+	position: relative;
+	bottom: -50px;
+}
+
+.colaborador-nome {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+
+	color: #6278f7;
+}
+
+.colaborador-cargo {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+
+	color: #212121;
+}
