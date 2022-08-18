@@ -4,7 +4,7 @@ function Botao(props) {
 	const { children } = props;
 
 	return (
-		<button type="submit" onClick={(e) => e.disabled(true)} className="botao">
+		<button type="submit" className="botao">
 			{children}
 		</button>
 	);
