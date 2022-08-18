@@ -55,7 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://amplication.com/"><img src="https://github.com/devguimaraes.png" width="100px;" alt=""/><br /><sub><b>Bruno Guimarães/b></sub></a><br /><a href="https://github.com/amplication/amplication/commits?author=yuval-hazaz" title="Code">💻</a></td>
+    <td align="center"><a href="https://amplication.com/"><img src="https://github.com/devguimaraes.png" width="100px;" alt=""/><br /><sub><b>Bruno Guimarães</b></sub></a><br /><a href="https://github.com/amplication/amplication/commits?author=yuval-hazaz" title="Code">💻</a></td>
  
   </tr>
 </table>
