@@ -23,6 +23,7 @@ function ListaSuspensa(props) {
 				name={itens.map((e) => e.nome)[itens.map((e, i) => i)]}
 				id={itens.map((e) => e.nome)[itens.map((e, indice) => indice)]}
 			>
+				<option> </option>
 				{itens.map((item) => (
 					<option key={item.nome}>{item.nome}</option>
 				))}
