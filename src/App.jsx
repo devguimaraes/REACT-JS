@@ -12,7 +12,6 @@ function App() {
 
 	function aoNovoColaborador(colaborador) {
 		setColaborador([...colaboradores, colaborador]);
-		// TODO os dados do formulário são salvos aqui
 	}
 
 	return (
