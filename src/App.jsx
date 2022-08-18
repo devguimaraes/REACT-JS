@@ -1,6 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import React, { useState } from 'react';
 import Banner from './Components/Banner';
+import Footer from './Components/Footer';
 import Formulario from './Components/form/Form';
 
 import Time from './Components/Times';
@@ -31,6 +32,7 @@ function App() {
 					)}
 				/>
 			))}
+			<Footer />
 		</>
 	);
 }

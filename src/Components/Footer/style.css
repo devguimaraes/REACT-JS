@@ -1,0 +1,35 @@
+footer {
+	background-color: #6278f7;
+}
+
+.footer_container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.footer_lista {
+	display: flex;
+	align-items: center;
+
+	justify-content: space-between;
+	list-style: none;
+}
+
+.footer_lista .lista_item--img {
+	width: 25px;
+	padding: 20px;
+}
+
+.footer_logo {
+	width: 166px;
+}
+
+.footer_paragrafo p {
+	padding: 10px;
+	color: #ffffff;
+}
