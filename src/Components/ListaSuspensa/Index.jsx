@@ -4,12 +4,12 @@ function ListaSuspensa(props) {
 	const { requiredObrigatorio } = props;
 	const { itens } = props;
 	const { label } = props;
-	const { select } = props;
+	const { value } = props;
 	const { pegaValor } = props;
 
-	function aoDigitar(evento) {
-		pegaValor(evento);
-	}
+	const aoDigitar = (e) => {
+		pegaValor(e);
+	};
 
 	return (
 		<div className="container-listaSuspensa">
@@ -17,9 +17,9 @@ function ListaSuspensa(props) {
 				{label}
 			</label>
 			<select
-				value={select}
 				required={requiredObrigatorio}
-				onChange={(e) => aoDigitar(e)}
+				value={value}
+				onChange={(e) => aoDigitar(e.target.value)}
 				name={itens.map((e) => e.nome)[itens.map((e, i) => i)]}
 				id={itens.map((e) => e.nome)[itens.map((e, indice) => indice)]}
 			>

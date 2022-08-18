@@ -11,7 +11,6 @@ function Formulario(props) {
 	const [nome, setNome] = useState('');
 	const [cargo, setcargo] = useState('');
 	const [imagem, setImagem] = useState('');
-
 	const [select, setSelect] = useState('');
 
 	function aoSalvar(evento) {
@@ -27,6 +26,7 @@ function Formulario(props) {
 		setNome('');
 		setcargo('');
 		setImagem('');
+		setSelect('');
 	}
 
 	return (
@@ -61,7 +61,7 @@ function Formulario(props) {
 				<ListaSuspensa
 					requiredObrigatorio
 					value={select}
-					pegaValor={(evento) => setSelect(evento.target.value)}
+					pegaValor={(e) => setSelect(e)}
 					itens={times}
 					label="Times"
 				/>
